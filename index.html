@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get your Avatar</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <section>
+        <h1>Find The Perfect Avatar That Suits Your Name</h1>
+        <div class="center">
+            <div class="details">
+                <label>Enter Your Name</label>
+                <br>
+                <input type="text" name="name" id="nameid">
+            </div>
+            <div class="imagediv">
+                <img src="hey.png" width="175" height="200" id="imgapi">
+            </div>
+            <button> Get Avatar</button>
+        </div>
+    </section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+    $(document).ready(function(){
+        $('button').click(function(){
+            const name=$('#nameid').val();
+            alert(name);
+            $('#imgapi').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+        });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+
+
+body {
+    margin: 0;
+    background-color: rgb(243, 73, 144);
+}
+h1 {
+     margin: auto;
+    width: 60%;
+    padding: 2em;
+    color: aliceblue;
+    font-family: Comfortaa, cursive;
+}
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 2.3em;
+    background-color: rgb(147, 16, 223);
+    align-items: center;
+    text-align: center;
+}
+
+.details {
+    padding: 1em;
+    font-size: 22px;
+    color: aliceblue;
+}
+
+.imagediv {
+    padding: 1em;
+}
+button {
+    padding: .3em;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    color: aliceblue;
+    background-color:rgb(243, 73, 144) ;
+}
